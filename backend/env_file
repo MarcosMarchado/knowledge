@@ -1,0 +1,9 @@
+module.exports = {
+    authSecret: '',
+    mongoUrl: '',
+    db: {
+        database: '',
+        user: '',
+        password: ''
+    } 
+}

@@ -1,0 +1,34 @@
+<template>
+  <div class="admin-pages">
+    <PageTitle icon="fa fa-cogs" main="Adminstração do Sistema" sub="Cadastro & Cia" />
+    <div class="admin-pages-tabs">
+      <b-card no-body>
+        <b-tabs card>
+          <b-tab title="Artigos" active>
+            <ArticleAdmin />
+          </b-tab>
+          <b-tab title="Categorias" active>
+            <CategoryAdmin />
+          </b-tab>
+          <b-tab title="Usuários" active>
+            <UserAdmin />
+          </b-tab>
+        </b-tabs>
+      </b-card>
+    </div>
+  </div>
+</template>
+
+<script>
+import PageTitle from "../template/PageTitle";
+import UserAdmin from "./UserAdmin";
+import CategoryAdmin from "./CategoryAdmin";
+import ArticleAdmin from "./ArticleAdmin";
+export default {
+  name: "AdminPages",
+  components: { PageTitle, UserAdmin, CategoryAdmin, ArticleAdmin }
+};
+</script>
+
+<style>
+</style>
